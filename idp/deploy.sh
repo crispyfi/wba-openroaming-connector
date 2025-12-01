@@ -1,11 +1,6 @@
 #!/bin/bash
-# This script is meant for quick & easy install via:
-#   $ curl -fsSL https://raw.githubusercontent.com/wireless-broadband-alliance/wba-openroaming-connector/main/prepare-debian11.sh -o prepare-debian11.sh
-#   $ chmod +x prepare-debian11.sh
-#   $ ./prepare-debian11.sh
 
-REPO_URL="https://github.com/wireless-broadband-alliance/wba-openroaming-connector.git"
-CERTS_PATH="/root/wba-openroaming-connector/certs"
+CERTS_PATH="/certs"
 
 if [ "$EUID" -ne 0 ]
   then echo "You must run this script as root, you can either sudo the script directly or become root with a command such as 'sudo su'"
@@ -73,7 +68,6 @@ pip3 install docker-compose
 
 #Prepare the environment
 cd /root
-git clone $REPO_URL
 #Prepare FreeRADIUS Certs
 cp $CERTS_PATH/freeradius/*.pem /root/wba-openroaming-connector/idp/configs/freeradius/certs
 # ready workdir
