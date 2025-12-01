@@ -30,7 +30,7 @@ After meeting the requirements, execute the **`deploy.sh`** script to perform co
 
 ---
 
-# 3. Verifying Docker Containers
+### 3. Verifying Docker Containers
 
 Once the setup is complete, verify that all expected services are running using `docker ps`.
 
@@ -58,7 +58,7 @@ CONTAINER ID   IMAGE                 COMMAND                  STATUS         POR
 
 ---
 
-# 4. Verifying Docker Containers
+### 4. Open UFW ports
 
 After verifying everything is running correctly:
 - Validate that relevant ports are open. Use the following command to allow required ports via UFW:
