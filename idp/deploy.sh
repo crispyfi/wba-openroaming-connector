@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CERTS_PATH="/certs"
+CERTS_PATH="/root/wba-openroamin-connector/certs"
 
 if [ "$EUID" -ne 0 ]
   then echo "You must run this script as root, you can either sudo the script directly or become root with a command such as 'sudo su'"
