@@ -33,12 +33,7 @@ then
     exit 1
 fi
 
-# Prompt for user input
-read -p "Enter REALM name: " realm_name
-read -p "Enter the client CIDR (default: 0.0.0.0/0): " client_cidr
-client_cidr=${client_cidr:-0.0.0.0/0}
-read -p "Enter the client secret (default: radsec): " client_secret
-client_secret=${client_secret:-radsec}
+# Prompt for MySQL root password
 read -p "Enter MySQL root password [admin]: " MYSQL_ROOT_PASSWORD
 MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD:-admin}
 
@@ -79,12 +74,8 @@ pip3 install docker-compose
 #Prepare the environment
 cd /root
 git clone $REPO_URL
-# Prepare certificates
-rm -rf /root/wba-openroaming-connector/idp/configs/freeradius/certs/*.pem
 #Prepare FreeRADIUS Certs
 cp $CERTS_PATH/freeradius/*.pem /root/wba-openroaming-connector/idp/configs/freeradius/certs
 # ready workdir
 cd /root/wba-openroaming-connector/idp/
 docker-compose up -d
-
-echo "Reminder: Make sure UDP ports 11812 and 11813 are open on your firewall (on your cloud provider if applicable), refer to the documentation for more details"
