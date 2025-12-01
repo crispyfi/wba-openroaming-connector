@@ -30,7 +30,7 @@ After meeting the requirements, execute the **`deploy.sh`** script to perform co
 
 ---
 
-### 3. Verifying Docker Containers
+### 3. Verify Docker Containers
 
 Once the setup is complete, verify that all expected services are running using `docker ps`.
 
