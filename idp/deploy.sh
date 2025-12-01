@@ -54,7 +54,7 @@ else
     echo "Docker is already installed. Skipping installation."
 fi
 
-pip3 install docker-compose
+sudo apt install docker-compose-plugin -y
 
 #Prepare the environment
 cd /root
