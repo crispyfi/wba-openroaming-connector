@@ -1,14 +1,7 @@
 # Installation Guide
 ---
 
-#### Notes:
-- The `.env` file ensures that the database and associated services are configured correctly during the setup process. Make sure this is done before running any scripts.
-- Use a strong password for `MYSQL_ROOT_PASSWORD` to secure your environment.
-
----
-
-
-### 2. Requirements
+### 1. Pre-requisites
 
 Ensure the following requirements are met before starting the installation process:
 
@@ -31,13 +24,13 @@ Failing to provide these files in the correct locations will cause the installat
 
 ---
 
-### 3. Running the `deploy.sh` Script
+### 2. Run the `deploy.sh` Script
 
 After meeting the requirements, execute the **`deploy.sh`** script to perform configuration and installation tasks.
 
 ---
 
-# 4. Verifying Docker Containers
+# 3. Verifying Docker Containers
 
 Once the setup is complete, verify that all expected services are running using `docker ps`.
 
@@ -65,7 +58,7 @@ CONTAINER ID   IMAGE                 COMMAND                  STATUS         POR
 
 ---
 
-### Final Steps
+# 4. Verifying Docker Containers
 
 After verifying everything is running correctly:
 - Validate that relevant ports are open. Use the following command to allow required ports via UFW:
