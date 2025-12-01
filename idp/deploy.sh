@@ -12,16 +12,6 @@ then
     echo "Please upload your FreeRadius (LetsEncrypt) certificate to $CERTS_PATH/freeradius/cert.pem"
     exit 1
 fi
-if [[ ! -f "$CERTS_PATH/freeradius/chain.pem" ]]
-then
-    echo "Please upload your FreeRadius (LetsEncrypt) chain to $CERTS_PATH/freeradius/chain.pem"
-    exit 1
-fi
-if [[ ! -f "$CERTS_PATH/freeradius/fullchain.pem" ]]
-then
-    echo "Please upload your FreeRadius (LetsEncrypt) fullchain to $CERTS_PATH/freeradius/fullchain.pem"
-    exit 1
-fi
 if [[ ! -f "$CERTS_PATH/freeradius/privkey.pem" ]]
 then
     echo "Please upload your FreeRadius (LetsEncrypt) private key to $CERTS_PATH/freeradius/privkey.pem"
