@@ -4,5 +4,7 @@ COPY configs/freeradius/certs /etc/freeradius/certs
 COPY configs/freeradius/clients.conf /etc/freeradius/clients.conf
 RUN chown freerad:freerad /etc/freeradius/certs/cert.pem
 RUN chown freerad:freerad /etc/freeradius/certs/privkey.pem
+RUN chown freerad:freerad /etc/freeradius/certs/fullchain.pem
 RUN chmod 600 /etc/freeradius/certs/privkey.pem
 RUN chmod 600 /etc/freeradius/certs/cert.pem
+RUN chmod 600 /etc/freeradius/certs/fullchain.pem
