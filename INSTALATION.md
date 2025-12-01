@@ -15,7 +15,7 @@ Ensure the following requirements are met before starting the installation proce
    - Make sure the necessary certificates and keys are placed in their respective paths:
 
    **FreeRADIUS Certificates**:
-   - `/root/wba-openroaming-connector/certs/freeradius/cert.pem`: FreeRADIUS certificate (e.g., Let’s Encrypt certificate).
+   - `/root/wba-openroaming-connector/certs/freeradius/cert.pem`: FreeRADIUS certificate.
    - `/root/wba-openroaming-connector/certs/freeradius/chain.pem`: FreeRADIUS chain file.
    - `/root/wba-openroaming-connector/certs/freeradius/privkey.pem`: FreeRADIUS private key.
 
