@@ -62,4 +62,4 @@ cd /root
 cp $CERTS_PATH/freeradius/*.pem /root/wba-openroaming-connector/idp/configs/freeradius/certs
 # ready workdir
 cd /root/wba-openroaming-connector/idp/
-docker-compose up -d
+docker compose up -d
