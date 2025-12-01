@@ -2,7 +2,7 @@
 
 ## How it works?
 
-The script (prepare-debian11.sh) provided in this project simplifies the setup of FreeRadius and MySQL servers by automating the process of preparing the necessary certificates, realm names, IP addresses, and other required information.
+The script (deploy.sh) provided in this project simplifies the setup of FreeRadius and MySQL servers.
 
 ## Prerequisites:
 - Git (optional and highly recommended for easier updates, if the user prefers to clone the repository)
